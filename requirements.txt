@@ -1,0 +1,12 @@
+# Core dependencies for the Automated Equity Valuation Model.
+# In Google Colab these are mostly preinstalled; yfinance is upgraded in Cell 2.
+# Local use:  pip install -r requirements.txt
+
+pandas>=1.5
+numpy>=1.23
+matplotlib>=3.6
+seaborn>=0.12        # optional: only used for prettier heatmaps; code degrades without it
+yfinance>=0.2.40     # live financial statement + market data pull
+
+# Note: scipy is NOT required. The reverse-DCF root finder is a hand-rolled
+# bisection solver, so there is no extra dependency for it.
